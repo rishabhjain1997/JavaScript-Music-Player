@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Music Player
+    </title>
+    <link rel="shortcut icon" type="image/jpg" href="images/hey.jpg" />
+</head>
+
+<body>
+    <h1>Music Player</h1>
+    <div class="music-container" id='music-container'>
+        <div class='music-info'>
+            <h4 id="song-title"></h4>
+            <div class="progress-container" id="progress-container" onclick='console.log("clicked")'>
+                <div id="progress" class="progress"></div>
+            </div>
+        </div>
+        <audio src=""></audio>
+        <div class="img-container">
+            <img src="" alt="music-cover" id="cover">
+        </div>
+        <div class="navigation">
+            <button id="prev" class="action-btn">
+                <ion-icon name="play-back"></ion-icon>
+            </button>
+            <button id="play" class="action-btn action-btn-big">
+                <ion-icon name="play" id='play-icon'></ion-icon>
+            </button>
+            <button id="next" class="action-btn">
+                <ion-icon name="play-forward"></ion-icon>
+            </button>
+        </div>
+
+    </div>
+
+    <script src='script.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>
